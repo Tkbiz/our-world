@@ -1,0 +1,323 @@
+body, html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 45px;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #01acac;
+}
+
+.section-title {
+  margin: 0;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.main-wrapper {
+  position: relative;
+}
+
+.top-wrapper {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  background: url("../img/header_background_v1.jpg") no-repeat center center;
+  background-size: cover;
+}
+.top-wrapper .header-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+}
+.top-wrapper .header-nav .nav-link {
+  padding: 20px 115px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right: 2px solid #607d8b;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.top-wrapper .header-nav .nav-link:first-child {
+  padding-left: 0;
+}
+.top-wrapper .header-nav .nav-link:last-child {
+  border-right: none;
+}
+.top-wrapper .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.top-wrapper .logo .logo-image {
+  max-width: 230px;
+  height: auto;
+}
+
+.header-block {
+  position: relative;
+  margin-bottom: 20px;
+}
+.header-block .header-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.header-block .header-section .header-title {
+  margin: 0 0 13px;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header-block .header-section .btn-top {
+  margin: 0 auto;
+}
+
+.toolbar {
+  margin-bottom: 20px;
+  text-align: right;
+}
+.toolbar .search-field {
+  height: 38px;
+  max-width: 200px;
+  padding: 5px 20px;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #010f16;
+  background: transparent;
+  border: 1px solid #607d8b;
+}
+.toolbar .search-field:focus {
+  outline: none;
+}
+.toolbar .search-field::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #010f16;
+}
+.toolbar .search-field::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #010f16;
+}
+.toolbar .search-field:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #010f16;
+}
+.toolbar .search-field:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #010f16;
+}
+
+.post-list {
+  margin-bottom: 60px;
+}
+.post-list .post-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px 20px 10px 10px;
+  background: #efefef;
+}
+.post-list .post-article .post-image {
+  max-width: 280px;
+  height: auto;
+  margin-right: 10px;
+}
+.post-list .post-article .post .post-title {
+  margin: 0 0 2px;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0097a7;
+}
+.post-list .post-article .post .post-description {
+  margin: 0 0 6px;
+  padding: 10px 0 10px 4px;
+  color: #e90303;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  border-bottom: 1px solid #607d8b;
+}
+.post-list .post-article .post .post-desc {
+  margin: 0 0 20px;
+  color: #010f16;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.post-list .post-article .btn {
+  height: 40px;
+  float: right;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.about {
+  margin-bottom: 60px;
+}
+.about .about-description {
+  margin: 0 0 19px;
+  color: #010f16;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.about .about-image {
+  max-width: 100%;
+  max-height: 225px;
+  height: auto;
+}
+
+.contact-form .form-subtitle {
+  margin: 0 0 20px;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: right;
+  color: #000;
+}
+.contact-form .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.contact-form .form-row .form-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+@media (min-width: 992px) {
+  .contact-form .form-row .form-group.w-50 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+.contact-form .form-row label {
+  display: inline-block;
+  float: right;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #0097a7;
+}
+.contact-form .form-row .form-control {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 5px 20px;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  background-color: transparent;
+  border: 1px solid #607d8b;
+}
+.contact-form .form-row .form-control:focus {
+  outline: none;
+}
+.contact-form .btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.contact-form .btn-block .btn-submit {
+  border: none;
+  outline: none;
+  font-weight: 400;
+}
+.contact-form .btn-block .btn-submit:focus {
+  outline: none;
+}
+
+.footer {
+  padding: 0 15px;
+}
+.footer .copyright {
+  color: #000;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=style.css.map */
